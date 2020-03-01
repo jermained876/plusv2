@@ -2,6 +2,10 @@
 
 namespace App;
 
+use App\Models\Product;
+use App\Models\Role;
+use App\Models\Userdetails;
+use App\Models\UserImage;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -36,4 +40,22 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public  function roles()
+    {
+        return $this->belongsTo(Role::class);
+    }
+
+    public  function product()
+    {
+        return $this->hasMany(Product::class);
+    }
+    public function userdetails()
+    {
+        return $this->hasOne(Userdetails::class);
+    }
+    public function userimage()
+    {
+        return $this->hasOne(UserImage::class);
+    }
 }
