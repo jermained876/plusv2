@@ -10,7 +10,9 @@ window.Vue = require('vue');
 
 window.EventBus = new Vue();
 
+import User from "./Helper/User"
 
+window.User= User
 
 /**
  * The following block of code may be used to automatically register your
