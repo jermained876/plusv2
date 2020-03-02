@@ -18,7 +18,7 @@ class User {
                        if(Token.isVaild(res.access_token))
                        {
                            AppStorage.store(res.access_token,res.user)
-                           window.location ='/forum'
+                           window.location ='/home'
                            //console.log('here    ')
                        }
                        else{
