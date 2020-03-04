@@ -24,6 +24,7 @@ class ProductResource extends JsonResource
             'condition_id'=>$this->condition_id,
             'status_id'=>$this->status_id,
             'category_id'=>$this->category_id,
+            'posted'=>$this->created_at->diffForHumans(),
 
 
          // 'replies'=> ReplyResource::collection($this->replies),

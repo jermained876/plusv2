@@ -35,7 +35,7 @@ Route::group([
 
 Route::resource('/products', 'ProductController');
 
-Route::resource('/category', 'TypeController');
+Route::resource('/category', 'CategoryController');
 
 
 Route::get('/mainpagebuyone',"MainpageController@buyone");

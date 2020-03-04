@@ -279,7 +279,7 @@ class ImagesTableSeeder extends Seeder
             "name" => 'image28',
             'slug' =>'image28',
             "product_id"=>'5',
-            "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0051.jpg",
+            "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0048.jpg",
             ]);
 
             Image::create([
@@ -287,7 +287,7 @@ class ImagesTableSeeder extends Seeder
                 "name" => 'image29',
                 'slug' =>'image29',
                 "product_id"=>'5',
-                "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0050.jpg",
+                "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0051.jpg",
                 ]);
 
 
@@ -296,7 +296,7 @@ class ImagesTableSeeder extends Seeder
                     "name" => 'image30',
                     'slug' =>'image30',
                     "product_id"=>'5',
-                    "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0049.jpg",
+                    "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0050.jpg",
                     ]);
 
 
@@ -305,7 +305,8 @@ class ImagesTableSeeder extends Seeder
                         "name" => 'image31',
                         'slug' =>'image31',
                         "product_id"=>'5',
-                        "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0048.jpg",
+                        "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0049.jpg",
+
                         ]);
 
 
@@ -314,7 +315,7 @@ class ImagesTableSeeder extends Seeder
                             "name" => 'image32',
                             'slug' =>'image32',
                             "product_id"=>'5',
-                            "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0047.jpg",
+                            "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0046.jpg",
                             ]);
 
 
@@ -323,7 +324,7 @@ class ImagesTableSeeder extends Seeder
                                 "name" => 'image33',
                                 'slug' =>'image33',
                                 "product_id"=>'5',
-                                "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0046.jpg",
+                                "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0047.jpg",
                                 ]);
 
 
@@ -332,7 +333,7 @@ class ImagesTableSeeder extends Seeder
                                     "name" => 'image34',
                                     'slug' =>'image34',
                                     "product_id"=>'5',
-                                    "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0045.jpg",
+                                    "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0045.jpg",
                                     ]);
 
 
@@ -341,7 +342,7 @@ class ImagesTableSeeder extends Seeder
                                         "name" => 'image35',
                                         'slug' =>'image35',
                                         "product_id"=>'5',
-                                        "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0044.jpg",
+                                        "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0044.jpg",
                                         ]);
 
 
@@ -350,7 +351,7 @@ class ImagesTableSeeder extends Seeder
                                             "name" => 'image36',
                                             'slug' =>'image36',
                                             "product_id"=>'5',
-                                            "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0041.jpg",
+                                            "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0038.jpg",
                                             ]);
 
 
@@ -359,7 +360,7 @@ class ImagesTableSeeder extends Seeder
                                                 "name" => 'image37',
                                                 'slug' =>'image37',
                                                 "product_id"=>'5',
-                                                "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0043.jpg",
+                                                "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0041.jpg",
                                                 ]);
 
 
@@ -368,7 +369,7 @@ class ImagesTableSeeder extends Seeder
                                                     "name" => 'image38',
                                                     'slug' =>'image38',
                                                     "product_id"=>'5',
-                                                    "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0039.jpg",
+                                                    "image_url"=>"https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0043.jpg",
                                                     ]);
 
 
@@ -377,7 +378,7 @@ class ImagesTableSeeder extends Seeder
                                                         "name" => 'image39',
                                                         'slug' =>'image39',
                                                         "product_id"=>'5',
-                                                        "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106970/J4%20case/IMG-20200222-WA0042.jpg",
+                                                        "image_url"=> "https://res.cloudinary.com/jd999dawkins/image/upload/v1583106892/A20/IMG-20200222-WA0042.jpg",
                                                         ]);
 
 //product 6 j4 case

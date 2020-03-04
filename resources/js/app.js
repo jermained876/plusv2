@@ -11,9 +11,12 @@ window.Vue = require('vue');
 window.EventBus = new Vue();
 
 import User from "./Helper/User"
+import ImageManage from "./Helper/ImageManage"
 
 window.User= User
+Window.ImageManage = ImageManage
 
+//ImageManage.imageResize700x400()
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -38,5 +41,6 @@ import router from "./Router/Router"
 const app = new Vue({
     components:{AppHome},
     el: '#app',
-    router
+    router,
+    ImageManage
 });

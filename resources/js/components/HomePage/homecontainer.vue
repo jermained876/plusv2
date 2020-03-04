@@ -3,7 +3,7 @@
 
   <buysection v-if="buysectiondata" :buysectiondata="buysectiondata"></buysection>
   <newsection v-if="newsectiondata" :newsectiondata="newsectiondata"></newsection>
-  
+
   <salesection v-if="salesectiondata" :salesectiondata="salesectiondata"></salesection>
 
 </div>
@@ -26,10 +26,12 @@ data(){
 
 created(){
 
+    axios.get("/api/mainpagenewp").then((res)=>this.newsectiondata=res.data).catch((error)=>console.log(error))
+/*
 axios.get("/api/mainpagebuyone").then((res)=>this.buysectiondata=res.data).catch((error)=>console.log(error))
 axios.get("/api/mainpagesale").then((res)=>this.salesectiondata=res.data).catch((error)=>console.log(error))
 axios.get("/api/mainpagenewp").then((res)=>this.newsectiondata=res.data).catch((error)=>console.log(error))
-
+*/
 }
 }
 </script>

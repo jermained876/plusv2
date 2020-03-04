@@ -1,6 +1,8 @@
 <template>
   <div class="row mt-2">
 
+
+
 <div class="col-lg-3 d-none d-md-block " >
      <sidebar></sidebar>
  </div>
@@ -9,7 +11,7 @@
       <div class="col-lg-9">
     <home-container v-if="homecontainer"></home-container>
     <category-container v-if="categorycontainer" :catdata="catdata"></category-container>
-    <product-container v-if="productcontainer"></product-container>
+    <product-container v-if="productcontainer" :productselected="productselected"></product-container>
       </div>
 
     </div>
@@ -32,7 +34,8 @@ data(){
                 homecontainer:true,
                 productcontainer:false,
                 categorycontainer:true,
-                catdata:{}
+                catdata:{},
+                productselected:null
 
                     }
 },
@@ -49,22 +52,41 @@ methods:{
               openHomeContainer(){
                 this.clearAllContainer();
                 this.homecontainer=true;
+            },
+              openProductContainer(){
+                this.clearAllContainer();
+                this.productcontainer=true;
             }
 
 },
 
 created() {
-    EventBus.$on('SelectCat',(item)=>{console.log(item+"here")
+  /* EventBus.$on('SelectCat',(item)=>{console.log(item+"here")
     axios.get('/api/category/'+item).then((res)=>{console.log(res.data)
     this.catdata=res.data
     }).catch((error)=>console.log(error))
     this.openCategoryContainer()})
 
-    
+    */
+
+            EventBus.$on('openProduct',(item)=>{
+                this.productselected=item
+                //console.log(item)
+                console.log(this.productselected)
+                this.openProductContainer()
+
+            })
+
+            EventBus.$on('closeProduct',()=>{
+              this.productselected=null
+              this.openHomeContainer()
+
+            })
+
 
 },
 mounted(){
- 
+
 }
 }
 </script>

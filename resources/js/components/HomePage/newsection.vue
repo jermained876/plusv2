@@ -1,10 +1,13 @@
 <template>
 <div>
   <h4 class="font-weight-bold">NEW PRODUCTS</h4>
- 
+
+
+
    <div class="row" v-if="newsectiondata">
-        <pdetail v-for="product in newsectiondata" :key="product.id" :item="product"></pdetail>
+        <pdetail v-for="product in newsectiondata.data" :key="product.id" :item="product" @click="openproduct"></pdetail>
     </div>
+
 </div>
 </template>
 
@@ -16,16 +19,21 @@ export default {
     components:{Carousel,pdetail},
     data(){
         return {
-            products:{}
+//products:{}
+        }
+    },
+    methods:{
+        openproduct(){
+            console.log('hellp')
         }
     },
     watch:{
         catdata(){
-              this.products=this.catdata.products 
+            //  this.products=this.catdata.products
         }
     },
     mounted() {
-       this.products=this.catdata.products 
+      // this.products=this.catdata.products
     }
 
 

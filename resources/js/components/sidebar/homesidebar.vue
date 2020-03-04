@@ -37,9 +37,11 @@ export default {
 
   created(){
         console.log('test')
-        axios.get('/api/category').then((res)=>{console.log(res)
+   axios.get('/api/category').then((res)=>{console.log(res)
         this.lists=res.data;
         }).catch((error)=>console.log(error))
+
+        
     }
 
 }

@@ -35,6 +35,7 @@ export default {
     components:{Navbar,Foot},
     created(){
         console.log("test");
+        this.$router.push({name:'home'})
     }
 
 }

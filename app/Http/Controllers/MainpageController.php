@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\ProductResource;
 use App\Models\Product;
 use App\Models\Promotion;
 use Illuminate\Http\Request;
@@ -19,6 +20,6 @@ class MainpageController extends Controller
 
     public function newproduct()
     {
-        return Product::all()->take(6);
+        return ProductResource::collection(Product::all()->take(6));
     }
 }
